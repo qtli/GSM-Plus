@@ -37,7 +37,7 @@ Based on the 1,319 test questions from GSM8K, we create eight variations for eac
 Examples of eight adversarial questions based on a seed question:
 
 <p align="center">
-    <img src="assets/example1.jpg" width="60%"> <br>
+    <img src="./assets/example1.jpg" width="60%"> <br>
 </p>
 
 ## Dataset Usage
