@@ -13,7 +13,10 @@ import func_timeout
 from tqdm import tqdm
 from collections import defaultdict, Counter
 from fraction import Fraction
-from prompt_template import pot_prompt, pot_prompt_map_func
+import sys
+import os
+sys.path.append(os.getcwd().split("GSM-Plus")[0] + "GSM-Plus/")
+from scripts.utils.prompt_template import pot_prompt_map_func
 
 
 OPENAI_KEY = ""
@@ -541,7 +544,8 @@ def parse_pred_ans(preds_str, golds_str, properties_list, true_type_list,
     cnt_table = {}
     source_set = set()
 
-    all_model_performance_file = "model_performance_all.json"
+    dir_name = os.getcwd().split("GSM-Plus")[0] + "GSM-Plus/"
+    all_model_performance_file = os.path.join(dir_name, "results", "model_performance_all.json")
     all_model_performance = json.load(open(all_model_performance_file))
     if model_name not in all_model_performance:
         all_model_performance[model_name] = {}
@@ -552,7 +556,6 @@ def parse_pred_ans(preds_str, golds_str, properties_list, true_type_list,
         source_set.add(source)
 
         num_q += 1
-
         result, pred, gold = test_answer(prompt_type=ptype, match_pattern=match_pattern,
                                          pred_str=pred_str, ans_str=gold_str, mv=mv, source=true_type, input_str=input_str)
         results.append(result)
@@ -703,7 +706,7 @@ def test_answer(pred_str="", ans_str="", prompt_type="", match_pattern="", mv=1,
         gold = normalize_final_answer(gold)
 
     if mv == 1:
-        if source == "necessary constraint removal":
+        if source == "critical thinking":
             pred = extract_pred_ans_none(pred_str, prompt_type=prompt_type, match_pattern=match_pattern)
         else:
             pred = extract_pred_ans(pred_str, prompt_type=prompt_type, match_pattern=match_pattern, input_str=input_str)
@@ -711,7 +714,7 @@ def test_answer(pred_str="", ans_str="", prompt_type="", match_pattern="", mv=1,
         pss = defaultdict(int)
         pss_list = []
         for ps in pred_str[:mv]:
-            if source == "necessary constraint removal":
+            if source == "critical thinking":
                 pred = extract_pred_ans_none(ps, prompt_type=prompt_type, match_pattern=match_pattern)
             else:
                 pred = extract_pred_ans(ps, prompt_type=prompt_type, match_pattern=match_pattern, input_str=input_str)
@@ -876,11 +879,8 @@ def get_gsm8k_gsmplus_map(input_path="gsmplus_test.json"):
         for i, question in enumerate(annotation_data):
             item = annotation_data[question]
             init_to_plus[question] = []
-            for attack in item["rewritten_questions"]:
-                aq = item["rewritten_questions"][attack].strip("\n").strip(" ")
+            for attack in item["perturbation_questions"]:
+                aq = item["rewritten_questions"][attack]["question"].strip("\n").strip(" ")
                 init_to_plus[question].append(aq)
                 plus_to_init[aq] = question
     return init_to_plus, plus_to_init
-
-
-

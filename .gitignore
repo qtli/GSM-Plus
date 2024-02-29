@@ -161,7 +161,9 @@ cython_debug/
 .idea/
 
 
-dataset/gsmplus_test.json
+dataset/gsmplus_test_raw.json
 dataset/extract_ans.py
 dataset/prompt_template.py
 dataset/prop.py
+
+results/prop.py

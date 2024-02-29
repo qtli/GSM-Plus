@@ -37,7 +37,7 @@ Based on the 1,319 test questions from GSM8K, we create eight variations for eac
 Examples of eight adversarial questions based on a seed question:
 
 <p align="center">
-    <img src="assets/example1.jpg" width="60%"> <br>
+    <img src="./assets/example1.jpg" width="80%"> <br>
 </p>
 
 ## Dataset Usage
@@ -70,14 +70,14 @@ The dataset is provided in `.jsonl` format and contains the following attributes
 
 ## Evaluations on GSM-Plus
 
-### Usage Examples
+### Inference Examples
 
 We offer a few examples for evaluating LLMs on GSM-Plus, as follows:
 
 - GPT-4, GPT-Turbo-3.5
 
 ```
-python scripts/openai_model_inference.py --model_name [MODEL_NAME] --output_file [OUTPUT_PATH]/[MODEL_NAME]_prediction.json --prompt_type [PROMPT]
+python scripts/openai_model_inference.py --model_name [MODEL_NAME] --output_file ../results/[MODEL_NAME].json --prompt_type [PROMPT]
 # [MODEL_NAME] can be: gpt-4-0613, gpt-3.5-turbo-0613, etc.
 # [PROMPT] can be: cot, pot, ltm, complex, contrastive, cot_sc
 ```
@@ -87,13 +87,26 @@ python scripts/openai_model_inference.py --model_name [MODEL_NAME] --output_file
 ```
 python scripts/general_model_inference.py \
 --model_name [MODEL_NAME] \
---output_file [OUTPUT_PATH]/[MODEL_NAME]_prediction.json \
+--output_file ../results/[MODEL_NAME]_prediction.json \
 --model_dir [MODEL_PATH] \  # path to checkpoint files
 --nshots 8 \
 --prompt_type [PROMPT] \
 --specify_your_gpus [GPUT_IDs]
 
 # [PROMPT] can be: cot-nshot, pot-nshot, ltm-nshot, ltm-1shot, complex, contrastive
+```
+
+The predictions of the investigated LLMs on the GSM-Plus and GSM8K datasets are stored in the `results` directory.
+
+
+### Evaluation Metrics 
+
+Run evaluation script `scripts/report_metrics.py` to calculate the accuracy, PDR, ASP metrics, for example: 
+
+```
+    # get_results("prediction_gsmplus_1209_all.json", prompt_type="cot", fine_grained=True, gsm8k_value=93.25, model_name="GPT-4")
+
+python scripts/report_metrics.py --input_file results/llama2_7b.json --prompt_type llama --model_name llama2_7b
 ```
 
 ## Compositional Prompting

@@ -1,0 +1,1153 @@
+{
+    "GPT-4": {
+        "critical thinking": "67.48",
+        "adding operation": "79.53",
+        "reversing operation": "83.7",
+        "integer-decimal-fraction conversion": "89.01",
+        "numerical substitution": "89.84",
+        "digit expansion": "90.45",
+        "distractor insertion": "90.75",
+        "gsm8k": "93.25",
+        "problem understanding": "93.86",
+        "gsmplus": "85.58",
+        "gsmplus_wo_ncr": "88.16",
+        "conf_mat": {
+            "tp": 0.874390243902439,
+            "tn": 0.40168539325842695,
+            "fp": 0.598314606741573,
+            "fn": 0.12560975609756098
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.9020905923344947,
+            "tn": 0.4012841091492777,
+            "fp": 0.5987158908507223,
+            "fn": 0.09790940766550522
+        },
+        "pdr": 8.23,
+        "conf_mat_count": {
+            "tp": 8604,
+            "tn": 286,
+            "fp": 426,
+            "fn": 1236,
+            "true": 9840,
+            "false": 712
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 7767,
+            "tn": 250,
+            "fp": 373,
+            "fn": 843,
+            "true": 8610,
+            "false": 623
+        },
+        "pdr_wo_ncr": 5.46
+    },
+    "GPT-3.5-Turbo": {
+        "critical thinking": "47.31",
+        "adding operation": "48.45",
+        "reversing operation": "55.19",
+        "distractor insertion": "62.17",
+        "integer-decimal-fraction conversion": "62.32",
+        "numerical substitution": "69.52",
+        "digit expansion": "70.36",
+        "gsm8k": "73.62",
+        "problem understanding": "74.22",
+        "gsmplus": "61.19",
+        "gsmplus_wo_ncr": "63.18",
+        "conf_mat": {
+            "tp": 0.697605561277034,
+            "tn": 0.6271551724137931,
+            "fp": 0.3728448275862069,
+            "fn": 0.302394438722966
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.7281153450051493,
+            "tn": 0.6371100164203612,
+            "fp": 0.36288998357963875,
+            "fn": 0.27188465499485065
+        },
+        "pdr": 16.88,
+        "conf_mat_count": {
+            "tp": 5419,
+            "tn": 1746,
+            "fp": 1038,
+            "fn": 2349,
+            "true": 7768,
+            "false": 2784
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 4949,
+            "tn": 1552,
+            "fp": 884,
+            "fn": 1848,
+            "true": 6797,
+            "false": 2436
+        },
+        "pdr_wo_ncr": 14.18
+    },
+    "LLaMA-2-7B": {
+        "critical thinking": "0.0",
+        "adding operation": "3.03",
+        "reversing operation": "7.05",
+        "distractor insertion": "7.58",
+        "digit expansion": "10.01",
+        "integer-decimal-fraction conversion": "10.39",
+        "numerical substitution": "12.96",
+        "problem understanding": "13.95",
+        "gsmplus": "8.12",
+        "gsmplus_wo_ncr": "9.28",
+        "conf_mat": {
+            "tp": 0.2959039548022599,
+            "tn": 0.9520577933450087,
+            "fp": 0.04794220665499124,
+            "fn": 0.7040960451977402
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.33817594834543985,
+            "tn": 0.94520890668001,
+            "fp": 0.05479109331998999,
+            "fn": 0.6618240516545602
+        },
+        "gsm8k": "13.42",
+        "pdr": 39.49,
+        "conf_mat_count": {
+            "tp": 419,
+            "tn": 8698,
+            "fp": 438,
+            "fn": 997,
+            "true": 1416,
+            "false": 9136
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 419,
+            "tn": 7556,
+            "fp": 438,
+            "fn": 820,
+            "true": 1239,
+            "false": 7994
+        },
+        "pdr_wo_ncr": 30.85
+    },
+    "LLaMA-2-13B": {
+        "critical thinking": "0.3",
+        "adding operation": "9.48",
+        "reversing operation": "13.42",
+        "distractor insertion": "15.39",
+        "integer-decimal-fraction conversion": "17.74",
+        "digit expansion": "22.9",
+        "numerical substitution": "25.93",
+        "problem understanding": "27.37",
+        "gsmplus": "16.57",
+        "gsmplus_wo_ncr": "18.89",
+        "conf_mat": {
+            "tp": 0.3921641791044776,
+            "tn": 0.9114470842332614,
+            "fp": 0.08855291576673865,
+            "fn": 0.6078358208955223
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.44776119402985076,
+            "tn": 0.8992304341512996,
+            "fp": 0.10076956584870045,
+            "fn": 0.5522388059701493
+        },
+        "gsm8k": "25.4",
+        "pdr": 34.76,
+        "conf_mat_count": {
+            "tp": 1051,
+            "tn": 7174,
+            "fp": 697,
+            "fn": 1629,
+            "true": 2680,
+            "false": 7871
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 1050,
+            "tn": 6193,
+            "fp": 694,
+            "fn": 1295,
+            "true": 2345,
+            "false": 6887
+        },
+        "pdr_wo_ncr": 25.63
+    },
+    "LLaMA-2-70B": {
+        "critical thinking": "0.3",
+        "adding operation": "31.54",
+        "reversing operation": "36.62",
+        "integer-decimal-fraction conversion": "42.08",
+        "distractor insertion": "46.85",
+        "digit expansion": "53.07",
+        "numerical substitution": "53.3",
+        "problem understanding": "56.56",
+        "gsmplus": "40.04",
+        "gsmplus_wo_ncr": "45.72",
+        "conf_mat": {
+            "tp": 0.5697810462978439,
+            "tn": 0.8213660245183888,
+            "fp": 0.1786339754816112,
+            "fn": 0.4302189537021561
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.6508118433619866,
+            "tn": 0.796347260445334,
+            "fp": 0.203652739554666,
+            "fn": 0.3491881566380134
+        },
+        "gsm8k": "56.71",
+        "pdr": 29.4,
+        "conf_mat_count": {
+            "tp": 3409,
+            "tn": 3752,
+            "fp": 816,
+            "fn": 2574,
+            "true": 5983,
+            "false": 4568
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 3407,
+            "tn": 3183,
+            "fp": 814,
+            "fn": 1828,
+            "true": 5235,
+            "false": 3997
+        },
+        "pdr_wo_ncr": 19.38
+    },
+    "Mistral-7B": {
+        "critical thinking": "5.53",
+        "adding operation": "14.4",
+        "reversing operation": "21.76",
+        "distractor insertion": "28.05",
+        "integer-decimal-fraction conversion": "29.87",
+        "numerical substitution": "35.18",
+        "digit expansion": "35.94",
+        "problem understanding": "38.67",
+        "gsmplus": "26.18",
+        "gsmplus_wo_ncr": "29.12",
+        "gsm8k": "39.58",
+        "conf_mat": {
+            "tp": 0.46264097744360905,
+            "tn": 0.8740470139771284,
+            "fp": 0.12595298602287167,
+            "fn": 0.537359022556391
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.5225563909774437,
+            "tn": 0.8651297876202577,
+            "fp": 0.13487021237974223,
+            "fn": 0.4774436090225564
+        },
+        "pdr": 33.86,
+        "conf_mat_count": {
+            "tp": 1969,
+            "tn": 5503,
+            "fp": 793,
+            "fn": 2287,
+            "true": 4256,
+            "false": 6296
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 1946,
+            "tn": 4766,
+            "fp": 743,
+            "fn": 1778,
+            "true": 3724,
+            "false": 5509
+        },
+        "pdr_wo_ncr": 26.43
+    },
+    "Abel-7B": {
+        "critical thinking": "0.99",
+        "adding operation": "24.64",
+        "distractor insertion": "33.28",
+        "reversing operation": "33.51",
+        "integer-decimal-fraction conversion": "38.59",
+        "digit expansion": "50.95",
+        "numerical substitution": "56.1",
+        "problem understanding": "58.68",
+        "gsmplus": "37.09",
+        "gsmplus_wo_ncr": "42.25",
+        "gsm8k": "59.51",
+        "conf_mat": {
+            "tp": 0.4987244897959184,
+            "tn": 0.8163551401869159,
+            "fp": 0.18364485981308412,
+            "fn": 0.5012755102040817
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.5688775510204082,
+            "tn": 0.7919893190921228,
+            "fp": 0.20801068090787717,
+            "fn": 0.43112244897959184
+        },
+        "pdr": 37.67,
+        "conf_mat_count": {
+            "tp": 3128,
+            "tn": 3494,
+            "fp": 786,
+            "fn": 3144,
+            "true": 6272,
+            "false": 4280
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 3122,
+            "tn": 2966,
+            "fp": 779,
+            "fn": 2366,
+            "true": 5488,
+            "false": 3745
+        },
+        "pdr_wo_ncr": 29.0
+    },
+    "Abel-13B": {
+        "critical thinking": "1.82",
+        "adding operation": "34.8",
+        "reversing operation": "41.62",
+        "distractor insertion": "45.49",
+        "integer-decimal-fraction conversion": "49.96",
+        "digit expansion": "59.74",
+        "numerical substitution": "62.4",
+        "problem understanding": "67.32",
+        "gsmplus": "45.39",
+        "gsmplus_wo_ncr": "51.62",
+        "gsm8k": "66.72",
+        "conf_mat": {
+            "tp": 0.5613636363636364,
+            "tn": 0.7613895216400911,
+            "fp": 0.2386104783599089,
+            "fn": 0.43863636363636366
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.638961038961039,
+            "tn": 0.7299056296778392,
+            "fp": 0.27009437032216077,
+            "fn": 0.36103896103896105
+        },
+        "pdr": 31.97,
+        "conf_mat_count": {
+            "tp": 3952,
+            "tn": 2674,
+            "fp": 838,
+            "fn": 3088,
+            "true": 7040,
+            "false": 3512
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 3936,
+            "tn": 2243,
+            "fp": 830,
+            "fn": 2224,
+            "true": 6160,
+            "false": 3073
+        },
+        "pdr_wo_ncr": 22.63
+    },
+    "Abel-70B": {
+        "critical thinking": "2.96",
+        "adding operation": "53.15",
+        "reversing operation": "60.05",
+        "integer-decimal-fraction conversion": "63.61",
+        "distractor insertion": "64.82",
+        "numerical substitution": "76.65",
+        "digit expansion": "76.88",
+        "problem understanding": "81.43",
+        "gsmplus": "59.94",
+        "gsmplus_wo_ncr": "68.08",
+        "gsm8k": "83.85",
+        "conf_mat": {
+            "tp": 0.6601809954751131,
+            "tn": 0.7143691588785047,
+            "fp": 0.28563084112149534,
+            "fn": 0.3398190045248869
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.7503555268261151,
+            "tn": 0.678237650200267,
+            "fp": 0.32176234979973295,
+            "fn": 0.24964447317388494
+        },
+        "pdr": 28.52,
+        "conf_mat_count": {
+            "tp": 5836,
+            "tn": 1223,
+            "fp": 489,
+            "fn": 3004,
+            "true": 8840,
+            "false": 1712
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 5804,
+            "tn": 1016,
+            "fp": 482,
+            "fn": 1931,
+            "true": 7735,
+            "false": 1498
+        },
+        "pdr_wo_ncr": 18.81
+    },
+    "MAmmoTH-7B": {
+        "critical thinking": "0.0",
+        "adding operation": "21.46",
+        "distractor insertion": "24.41",
+        "reversing operation": "26.76",
+        "integer-decimal-fraction conversion": "38.21",
+        "numerical substitution": "45.19",
+        "digit expansion": "49.28",
+        "problem understanding": "51.78",
+        "gsmplus": "32.14",
+        "gsmplus_wo_ncr": "36.73",
+        "gsm8k": "52.84",
+        "conf_mat": {
+            "tp": 0.4851147776183644,
+            "tn": 0.8621105527638191,
+            "fp": 0.1378894472361809,
+            "fn": 0.5148852223816356
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.5544168887067021,
+            "tn": 0.8424075350333103,
+            "fp": 0.15759246496668963,
+            "fn": 0.4455831112932978
+        },
+        "pdr": 39.17,
+        "conf_mat_count": {
+            "tp": 2705,
+            "tn": 4289,
+            "fp": 686,
+            "fn": 2871,
+            "true": 5576,
+            "false": 4975
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 2705,
+            "tn": 3667,
+            "fp": 686,
+            "fn": 2174,
+            "true": 4879,
+            "false": 4353
+        },
+        "pdr_wo_ncr": 30.49
+    },
+    "MAmmoTH-13B": {
+        "critical thinking": "0.0",
+        "adding operation": "31.39",
+        "reversing operation": "34.12",
+        "distractor insertion": "37.07",
+        "integer-decimal-fraction conversion": "48.67",
+        "numerical substitution": "54.89",
+        "digit expansion": "58.53",
+        "problem understanding": "61.87",
+        "gsmplus": "40.82",
+        "gsmplus_wo_ncr": "46.65",
+        "gsm8k": "62.4",
+        "conf_mat": {
+            "tp": 0.5457168894289186,
+            "tn": 0.8200151247794303,
+            "fp": 0.1799848752205697,
+            "fn": 0.4542831105710814
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.6236764450616212,
+            "tn": 0.7942955920484011,
+            "fp": 0.20570440795159897,
+            "fn": 0.37632355493837877
+        },
+        "pdr": 34.58,
+        "conf_mat_count": {
+            "tp": 3593,
+            "tn": 3253,
+            "fp": 714,
+            "fn": 2991,
+            "true": 6584,
+            "false": 3967
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 3593,
+            "tn": 2757,
+            "fp": 714,
+            "fn": 2168,
+            "true": 5761,
+            "false": 3471
+        },
+        "pdr_wo_ncr": 25.24
+    },
+    "MAmmoTH-70B": {
+        "critical thinking": "0.0",
+        "adding operation": "47.76",
+        "reversing operation": "49.13",
+        "distractor insertion": "56.63",
+        "integer-decimal-fraction conversion": "59.21",
+        "numerical substitution": "67.4",
+        "digit expansion": "71.65",
+        "problem understanding": "75.51",
+        "gsmplus": "53.41",
+        "gsmplus_wo_ncr": "61.04",
+        "gsm8k": "75.89",
+        "conf_mat": {
+            "tp": 0.631993006993007,
+            "tn": 0.7738891073535195,
+            "fp": 0.22611089264648054,
+            "fn": 0.368006993006993
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.7222777222777222,
+            "tn": 0.7415730337078652,
+            "fp": 0.25842696629213485,
+            "fn": 0.2777222777222777
+        },
+        "pdr": 29.62,
+        "conf_mat_count": {
+            "tp": 5061,
+            "tn": 1968,
+            "fp": 575,
+            "fn": 2947,
+            "true": 8008,
+            "false": 2543
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 5061,
+            "tn": 1650,
+            "fp": 575,
+            "fn": 1946,
+            "true": 7007,
+            "false": 2225
+        },
+        "pdr_wo_ncr": 19.57
+    },
+    "MAmmoTH-Coder-7B": {
+        "critical thinking": "0.0",
+        "adding operation": "29.04",
+        "reversing operation": "31.46",
+        "distractor insertion": "33.66",
+        "integer-decimal-fraction conversion": "45.79",
+        "numerical substitution": "54.81",
+        "digit expansion": "56.63",
+        "problem understanding": "58.45",
+        "gsmplus": "38.73",
+        "gsmplus_wo_ncr": "44.27",
+        "gsm8k": "59.89",
+        "conf_mat": {
+            "tp": 0.5346518987341772,
+            "tn": 0.8326636728905696,
+            "fp": 0.1673363271094304,
+            "fn": 0.46534810126582277
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.6110307414104883,
+            "tn": 0.8087520259319287,
+            "fp": 0.1912479740680713,
+            "fn": 0.38896925858951176
+        },
+        "pdr": 35.33,
+        "conf_mat_count": {
+            "tp": 3379,
+            "tn": 3523,
+            "fp": 708,
+            "fn": 2941,
+            "true": 6320,
+            "false": 4231
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 3379,
+            "tn": 2994,
+            "fp": 708,
+            "fn": 2151,
+            "true": 5530,
+            "false": 3702
+        },
+        "pdr_wo_ncr": 26.08
+    },
+    "MAmmoTH-Coder-13B": {
+        "critical thinking": "0.0",
+        "reversing operation": "36.16",
+        "adding operation": "36.92",
+        "distractor insertion": "43.21",
+        "integer-decimal-fraction conversion": "50.27",
+        "numerical substitution": "59.36",
+        "digit expansion": "62.02",
+        "problem understanding": "63.84",
+        "gsmplus": "43.97",
+        "gsmplus_wo_ncr": "50.25",
+        "gsm8k": "64.9",
+        "conf_mat": {
+            "tp": 0.569071261682243,
+            "tn": 0.798866090712743,
+            "fp": 0.20113390928725702,
+            "fn": 0.430928738317757
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.650200267022697,
+            "tn": 0.7704412218451095,
+            "fp": 0.22955877815489045,
+            "fn": 0.34979973297730305
+        },
+        "pdr": 32.25,
+        "conf_mat_count": {
+            "tp": 3897,
+            "tn": 2959,
+            "fp": 745,
+            "fn": 2951,
+            "true": 6848,
+            "false": 3704
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 3896,
+            "tn": 2497,
+            "fp": 744,
+            "fn": 2096,
+            "true": 5992,
+            "false": 3241
+        },
+        "pdr_wo_ncr": 22.57
+    },
+    "MAmmoTH-Coder-34B": {
+        "critical thinking": "0.0",
+        "adding operation": "42.38",
+        "reversing operation": "44.58",
+        "distractor insertion": "51.71",
+        "integer-decimal-fraction conversion": "57.47",
+        "numerical substitution": "64.14",
+        "digit expansion": "68.99",
+        "problem understanding": "73.69",
+        "gsmplus": "50.37",
+        "gsmplus_wo_ncr": "57.57",
+        "gsm8k": "72.25",
+        "conf_mat": {
+            "tp": 0.6053252885624344,
+            "tn": 0.7605874316939891,
+            "fp": 0.23941256830601093,
+            "fn": 0.3946747114375656
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.6916504272223055,
+            "tn": 0.7263856362217018,
+            "fp": 0.27361436377829823,
+            "fn": 0.3083495727776945
+        },
+        "pdr": 30.28,
+        "conf_mat_count": {
+            "tp": 4615,
+            "tn": 2227,
+            "fp": 701,
+            "fn": 3009,
+            "true": 7624,
+            "false": 2928
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 4614,
+            "tn": 1861,
+            "fp": 701,
+            "fn": 2057,
+            "true": 6671,
+            "false": 2562
+        },
+        "pdr_wo_ncr": 20.32
+    },
+    "ToRA-7B": {
+        "critical thinking": "0.0",
+        "distractor insertion": "26.0",
+        "adding operation": "32.22",
+        "reversing operation": "41.39",
+        "integer-decimal-fraction conversion": "54.13",
+        "numerical substitution": "62.02",
+        "digit expansion": "64.82",
+        "problem understanding": "68.23",
+        "gsmplus": "43.6",
+        "gsmplus_wo_ncr": "49.83",
+        "gsm8k": "67.48",
+        "conf_mat_wo_ncr": {
+            "tp": 0.6475369858559584,
+            "tn": 0.8011031797534068,
+            "fp": 0.1988968202465931,
+            "fn": 0.35246301414404163
+        },
+        "conf_mat": {
+            "tp": 0.5690293196697979,
+            "tn": 0.8255813953488372,
+            "fp": 0.1744186046511628,
+            "fn": 0.4309706803302021
+        },
+        "pdr": 35.39,
+        "conf_mat_wo_ncr_count": {
+            "tp": 3983,
+            "tn": 2469,
+            "fp": 613,
+            "fn": 2168,
+            "true": 6151,
+            "false": 3082
+        },
+        "conf_mat_count": {
+            "tp": 3998,
+            "tn": 2911,
+            "fp": 615,
+            "fn": 3028,
+            "true": 7026,
+            "false": 3526
+        },
+        "pdr_wo_ncr": 26.16
+    },
+    "ToRA-13B": {
+        "critical thinking": "0.0",
+        "distractor insertion": "34.72",
+        "adding operation": "39.88",
+        "reversing operation": "45.79",
+        "integer-decimal-fraction conversion": "56.71",
+        "numerical substitution": "65.35",
+        "digit expansion": "67.85",
+        "problem understanding": "72.71",
+        "gsmplus": "47.88",
+        "gsmplus_wo_ncr": "54.72",
+        "conf_mat": {
+            "tp": 0.5995714477032276,
+            "tn": 0.8094003241491086,
+            "fp": 0.1905996758508914,
+            "fn": 0.4004285522967725
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.6824303642485461,
+            "tn": 0.7825120414968507,
+            "fp": 0.2174879585031493,
+            "fn": 0.3175696357514539
+        },
+        "gsm8k": "71.8",
+        "pdr": 33.31,
+        "conf_mat_count": {
+            "tp": 4477,
+            "tn": 2497,
+            "fp": 588,
+            "fn": 2990,
+            "true": 7467,
+            "false": 3085
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 4459,
+            "tn": 2112,
+            "fp": 587,
+            "fn": 2075,
+            "true": 6534,
+            "false": 2699
+        },
+        "pdr_wo_ncr": 23.79
+    },
+    "SEGO-7B": {
+        "numerical substitution": "60.35",
+        "digit expansion": "64.29",
+        "integer-decimal-fraction conversion": "51.71",
+        "adding operation": "35.86",
+        "reversing operation": "41.02",
+        "problem understanding": "67.25",
+        "distractor insertion": "37.23",
+        "critical thinking": "0.23",
+        "gsmplus": "44.71",
+        "gsmplus_wo_ncr": "51.1",
+        "gsm8k": "68.69",
+        "conf_mat": {
+            "tp": 0.5916482910694597,
+            "tn": 0.8273665048543689,
+            "fp": 0.17263349514563106,
+            "fn": 0.40835170893054024
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.676169475507954,
+            "tn": 0.8027045769764216,
+            "fp": 0.19729542302357836,
+            "fn": 0.32383052449204597
+        },
+        "pdr": 34.91,
+        "conf_mat_count": {
+            "tp": 4293,
+            "tn": 2727,
+            "fp": 569,
+            "fn": 2963,
+            "true": 7256,
+            "false": 3296
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 4293,
+            "tn": 2315,
+            "fp": 569,
+            "fn": 2056,
+            "true": 6349,
+            "false": 2884
+        },
+        "pdr_wo_ncr": 25.61
+    },
+    "SEGO-13B": {
+        "critical thinking": "0.23",
+        "adding operation": "43.59",
+        "digit expansion": "68.54",
+        "reversing operation": "45.94",
+        "distractor insertion": "40.64",
+        "integer-decimal-fraction conversion": "58.61",
+        "numerical substitution": "65.5",
+        "problem understanding": "71.57",
+        "gsmplus": "49.3",
+        "gsmplus_wo_ncr": "56.34",
+        "gsm8k": "72.50",
+        "conf_mat": {
+            "tp": 0.617939330543933,
+            "tn": 0.7916666666666666,
+            "fp": 0.20833333333333334,
+            "fn": 0.3820606694560669
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.706216377764495,
+            "tn": 0.7619047619047619,
+            "fp": 0.23809523809523808,
+            "fn": 0.2937836222355051
+        },
+        "pdr": 32.0,
+        "conf_mat_count": {
+            "tp": 4726,
+            "tn": 2299,
+            "fp": 605,
+            "fn": 2922,
+            "true": 7648,
+            "false": 2904
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 4726,
+            "tn": 1936,
+            "fp": 605,
+            "fn": 1966,
+            "true": 6692,
+            "false": 2541
+        },
+        "pdr_wo_ncr": 22.29
+    },
+    "MetaMath-Mistral": {
+        "critical thinking": "10.61",
+        "adding operation": "45.11",
+        "distractor insertion": "55.65",
+        "reversing operation": "58.15",
+        "integer-decimal-fraction conversion": "61.94",
+        "digit expansion": "69.98",
+        "numerical substitution": "71.04",
+        "problem understanding": "77.48",
+        "gsmplus": "56.25",
+        "gsmplus_wo_ncr": "62.76",
+        "gsm8k": "77.79",
+        "conf_mat": {
+            "tp": 0.6499756335282652,
+            "tn": 0.7440273037542662,
+            "fp": 0.25597269624573377,
+            "fn": 0.3500243664717349
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.7269562795878586,
+            "tn": 0.7201365187713311,
+            "fp": 0.27986348122866894,
+            "fn": 0.2730437204121415
+        },
+        "pdr": 27.69,
+        "conf_mat_count": {
+            "tp": 5335,
+            "tn": 1744,
+            "fp": 600,
+            "fn": 2873,
+            "true": 8208,
+            "false": 2344
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 5221,
+            "tn": 1477,
+            "fp": 574,
+            "fn": 1961,
+            "true": 7182,
+            "false": 2051
+        },
+        "pdr_wo_ncr": 19.32
+    },
+    "MetaMath-13B": {
+        "critical thinking": "4.93",
+        "adding operation": "36.32",
+        "distractor insertion": "42.91",
+        "integer-decimal-fraction conversion": "53.15",
+        "reversing operation": "53.9",
+        "numerical substitution": "61.49",
+        "digit expansion": "64.29",
+        "problem understanding": "71.65",
+        "gsmplus": "48.58",
+        "gsmplus_wo_ncr": "54.81",
+        "gsm8k": "70.81",
+        "conf_mat": {
+            "tp": 0.578659188034188,
+            "tn": 0.7878590078328982,
+            "fp": 0.21214099216710183,
+            "fn": 0.42134081196581197
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.659035409035409,
+            "tn": 0.7612831033196569,
+            "fp": 0.23871689668034315,
+            "fn": 0.340964590964591
+        },
+        "pdr": 31.39,
+        "conf_mat_count": {
+            "tp": 4333,
+            "tn": 2414,
+            "fp": 650,
+            "fn": 3155,
+            "true": 7488,
+            "false": 3064
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 4318,
+            "tn": 2041,
+            "fp": 640,
+            "fn": 2234,
+            "true": 6552,
+            "false": 2681
+        },
+        "pdr_wo_ncr": 22.6
+    },
+    "MetaMath-70B": {
+        "critical thinking": "9.93",
+        "adding operation": "51.02",
+        "reversing operation": "58.0",
+        "distractor insertion": "61.94",
+        "integer-decimal-fraction conversion": "64.97",
+        "digit expansion": "74.53",
+        "numerical substitution": "74.91",
+        "problem understanding": "79.61",
+        "gsmplus": "59.37",
+        "gsmplus_wo_ncr": "66.42",
+        "gsm8k": "82.11",
+        "conf_mat": {
+            "tp": 0.6346596136154554,
+            "tn": 0.7634698275862069,
+            "fp": 0.2365301724137931,
+            "fn": 0.36534038638454464
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.7223025364699698,
+            "tn": 0.7327586206896551,
+            "fp": 0.2672413793103448,
+            "fn": 0.2776974635300302
+        },
+        "pdr": 27.71,
+        "conf_mat_count": {
+            "tp": 5519,
+            "tn": 1417,
+            "fp": 439,
+            "fn": 3177,
+            "true": 8696,
+            "false": 1856
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 5496,
+            "tn": 1190,
+            "fp": 434,
+            "fn": 2113,
+            "true": 7609,
+            "false": 1624
+        },
+        "pdr_wo_ncr": 19.11
+    },
+    "CodeLlama-7B": {
+        "gsm8k": "25.32",
+        "critical thinking": "1.44",
+        "adding operation": "8.57",
+        "reversing operation": "9.33",
+        "distractor insertion": "11.37",
+        "integer-decimal-fraction conversion": "19.11",
+        "numerical substitution": "22.29",
+        "digit expansion": "23.81",
+        "problem understanding": "25.93",
+        "gsmplus": "15.05",
+        "gsmplus_wo_ncr": "17.2",
+        "conf_mat": {
+            "tp": 0.39721385542168675,
+            "tn": 0.9324974670719351,
+            "fp": 0.06750253292806484,
+            "fn": 0.6027861445783133
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.45395869191049915,
+            "tn": 0.9228542480822116,
+            "fp": 0.07714575191778839,
+            "fn": 0.5460413080895009
+        },
+        "pdr": 40.56,
+        "pdr_wo_ncr": 31.66,
+        "conf_mat_count": {
+            "tp": 1055,
+            "tn": 7363,
+            "fp": 533,
+            "fn": 1601,
+            "true": 2656,
+            "false": 7896
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 1055,
+            "tn": 6376,
+            "fp": 533,
+            "fn": 1269,
+            "true": 2324,
+            "false": 6909
+        }
+    },
+    "CodeLlama-13B": {
+        "critical thinking": "4.4",
+        "adding operation": "14.56",
+        "reversing operation": "15.39",
+        "distractor insertion": "16.68",
+        "integer-decimal-fraction conversion": "28.2",
+        "numerical substitution": "29.57",
+        "digit expansion": "29.95",
+        "problem understanding": "34.65",
+        "gsmplus": "21.67",
+        "gsmplus_wo_ncr": "24.14",
+        "gsm8k": "35.94",
+        "conf_mat": {
+            "tp": 0.4253177966101695,
+            "tn": 0.8994982290436836,
+            "fp": 0.1005017709563164,
+            "fn": 0.5746822033898306
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.4824455205811138,
+            "tn": 0.8928993084837241,
+            "fp": 0.10710069151627594,
+            "fn": 0.5175544794188862
+        },
+        "pdr": 39.71,
+        "pdr_wo_ncr": 32.83,
+        "conf_mat_count": {
+            "tp": 1606,
+            "tn": 6095,
+            "fp": 681,
+            "fn": 2170,
+            "true": 3776,
+            "false": 6776
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 1594,
+            "tn": 5294,
+            "fp": 635,
+            "fn": 1710,
+            "true": 3304,
+            "false": 5929
+        }
+    },
+    "CodeLlama-34B": {
+        "critical thinking": "4.4",
+        "adding operation": "14.56",
+        "reversing operation": "15.39",
+        "distractor insertion": "16.68",
+        "integer-decimal-fraction conversion": "28.2",
+        "numerical substitution": "29.57",
+        "digit expansion": "29.95",
+        "problem understanding": "34.65",
+        "gsmplus": "21.67",
+        "gsmplus_wo_ncr": "24.14",
+        "gsm8k": "45.64",
+        "conf_mat": {
+            "tp": 0.346875,
+            "tn": 0.8918636995827538,
+            "fp": 0.10813630041724617,
+            "fn": 0.653125
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.39261904761904765,
+            "tn": 0.8847605801708722,
+            "fp": 0.11523941982912776,
+            "fn": 0.6073809523809524
+        },
+        "pdr": 53.72,
+        "conf_mat_count": {
+            "tp": 1665,
+            "tn": 5130,
+            "fp": 622,
+            "fn": 3135,
+            "true": 4800,
+            "false": 5752
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 1649,
+            "tn": 4453,
+            "fp": 580,
+            "fn": 2551,
+            "true": 4200,
+            "false": 5033
+        },
+        "pdr_wo_ncr": 47.11
+    },
+    "MetaMath-7B": {
+        "conf_mat": {
+            "tp": 0.5681818181818182,
+            "tn": 0.806378132118451,
+            "fp": 0.19362186788154898,
+            "fn": 0.4318181818181818
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.6420454545454546,
+            "tn": 0.7862024080702896,
+            "fp": 0.21379759192971037,
+            "fn": 0.35795454545454547
+        },
+        "gsm8k": "66.72",
+        "gsmplus": "44.35",
+        "gsmplus_wo_ncr": "49.95",
+        "pdr": 33.53,
+        "conf_mat_count": {
+            "tp": 4000,
+            "tn": 2832,
+            "fp": 680,
+            "fn": 3040,
+            "true": 7040,
+            "false": 3512
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 3955,
+            "tn": 2416,
+            "fp": 657,
+            "fn": 2205,
+            "true": 6160,
+            "false": 3073
+        },
+        "pdr_wo_ncr": 25.13
+    },
+    "Human": {
+        "conf_mat": {
+            "tp": 0.9746835443037974,
+            "tn": 0.0,
+            "fp": 1.0,
+            "fn": 0.02531645569620253
+        },
+        "conf_mat_count": {
+            "tp": 77,
+            "tn": 0,
+            "fp": 3,
+            "fn": 2,
+            "true": 79,
+            "false": 3
+        },
+        "conf_mat_wo_ncr": {
+            "tp": 0.9836065573770492,
+            "tn": 0.3333333333333333,
+            "fp": 0.6666666666666666,
+            "fn": 0.01639344262295082
+        },
+        "conf_mat_wo_ncr_count": {
+            "tp": 60,
+            "tn": 1,
+            "fp": 2,
+            "fn": 1,
+            "true": 61,
+            "false": 3
+        }
+    },
+    "llama2_7b": {
+        "gsmplus": "8.12",
+        "critical thinking": "0.0",
+        "adding operation": "3.03",
+        "reversing operation": "7.05",
+        "distractor insertion": "7.58",
+        "digit expansion": "10.01",
+        "integer-decimal-fraction conversion": "10.39",
+        "numerical substitution": "12.96",
+        "problem understanding": "13.95"
+    }
+}

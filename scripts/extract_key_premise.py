@@ -4,9 +4,10 @@ import time
 import random
 import argparse
 import string
-import re
-from utils.extract_ans import remove_numbered_prefixes, extract_gold_ans, invoke_openai, get_gsmplus, split_sentences, is_question_sentence
-from utils.prompt_template import cot_prompt_map_func
+import sys
+import os
+sys.path.append(os.getcwd().split("GSM-Plus")[0] + "GSM-Plus/")
+from scripts.utils.extract_ans import remove_numbered_prefixes, extract_gold_ans, invoke_openai, get_gsmplus, split_sentences, is_question_sentence
 
 def extract_premise_prompt_map(question, mode="extract_q_premise"):
     natural_program_format_few_shot = [

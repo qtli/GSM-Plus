@@ -1,11 +1,13 @@
-import os
 import json
 import pdb
 import time
 import random
 import re
 import argparse
-from utils.extract_ans import invoke_openai, get_gsmplus, remove_numbered_prefixes
+import sys
+import os
+sys.path.append(os.getcwd().split("GSM-Plus")[0] + "GSM-Plus/")
+from scripts.utils.extract_ans import invoke_openai, get_gsmplus, remove_numbered_prefixes
 
 REQUIREMENTS = f"""Solve the math question step by step. Please start each step with "Step :" and split steps with "\n\n". There are a few things you should be aware of:
 

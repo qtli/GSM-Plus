@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
-from utils.extract_ans import invoke_openai, get_gsmplus
-from utils.prompt_template import cot_prompt_map_func, pot_prompt_map_func, ltm_prompt_map_func, complex_prompt_map_func, contrastive_prompt_map_func
-import json
+import sys
 import os
+sys.path.append(os.getcwd().split("GSM-Plus")[0] + "GSM-Plus/")
+from scripts.utils.extract_ans import invoke_openai, get_gsmplus
+from scripts.utils.prompt_template import cot_prompt_map_func, pot_prompt_map_func, ltm_prompt_map_func, complex_prompt_map_func, contrastive_prompt_map_func
+import json
 import argparse
 
 
@@ -18,11 +20,7 @@ def inference(input_file="", output_file="", model="turbo", prompt_type="cot", s
     for idx, (question, answer, type) in enumerate(zip(questions, answers, types)):
         if idx < len(output_data):
             continue
-        item = {
-            "question": question,
-            "answer": answer,
-            "type": type
-        }
+        item = {"question": question, "answer": answer, "type": type}
         if "sc" not in prompt_type:
             if prompt_type == "cot":
                 template, instruction = cot_prompt_map_func(question)
