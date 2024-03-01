@@ -113,7 +113,7 @@ python scripts/compositional_prompt.py --input_file comp_test.json --output_file
 ## ️Citation
 If you find **GSM-Plus** useful, please consider giving star and citing our paper:
 ```
-@misc{ma2024agentboard,
+@misc{li2024gsmplus,
       title={GSM-Plus: A Comprehensive Benchmark for Evaluating the Robustness of LLMs as Mathematical Problem Solvers}, 
       author={Qintong Li and Leyang Cui and Xueliang Zhao and Lingpeng Kong and Wei Bi},
       year={2024},
