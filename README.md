@@ -117,7 +117,7 @@ If you find **GSM-Plus** useful, please consider giving star and citing our pape
       title={GSM-Plus: A Comprehensive Benchmark for Evaluating the Robustness of LLMs as Mathematical Problem Solvers}, 
       author={Qintong Li and Leyang Cui and Xueliang Zhao and Lingpeng Kong and Wei Bi},
       year={2024},
-      eprint={},
+      eprint={2402.19255},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
