@@ -7,7 +7,7 @@ Dataset and Code for the Paper "[A Comprehensive Benchmark for Evaluating the Ro
 
 <div align="center">
   <!-- <a href="#model">Model</a> • -->
-  🌐 <a href="https://qtli.github.io/GSM-Plus">Project Page</a> |
+  🌐 <a href="https://qtli.github.io/GSM-Plus/">Project Page</a> |
   📚 <a href="https://huggingface.co/datasets/qintongli/GSM-Plus">Data</a> |
   📃 <a href="https://arxiv.org/abs/2401.13178">Paper</a> |
 </div>
