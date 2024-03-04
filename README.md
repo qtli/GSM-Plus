@@ -6,10 +6,9 @@
 Dataset and Code for the Paper "[A Comprehensive Benchmark for Evaluating the Robustness of LLMs as Mathematical Problem Solvers](https://arxiv.org/abs/)".
 
 <div align="center">
-  <!-- <a href="#model">Model</a> • -->
   🌐 <a href="https://qtli.github.io/GSM-Plus/">Project Page</a> |
   📚 <a href="https://huggingface.co/datasets/qintongli/GSM-Plus">Data</a> |
-  📃 <a href="https://arxiv.org/abs/2401.13178">Paper</a> |
+  📃 <a href="https://arxiv.org/abs/2401.13178">Paper</a>
 </div>
 
 
@@ -37,7 +36,7 @@ Based on the 1,319 test questions from GSM8K, we create eight variations for eac
 Examples of eight adversarial questions based on a seed question:
 
 <p align="center">
-    <img src="./assets/example1.jpg" width="80%"> <br>
+    <img src="./assets/example1.jpg" width="70%"> <br>
 </p>
 
 ## Dataset Usage
@@ -70,14 +69,14 @@ The dataset is provided in `.jsonl` format and contains the following attributes
 
 ## Evaluations on GSM-Plus
 
-### Inference Examples
+### Usage Examples
 
 We offer a few examples for evaluating LLMs on GSM-Plus, as follows:
 
 - GPT-4, GPT-Turbo-3.5
 
 ```
-python scripts/openai_model_inference.py --model_name [MODEL_NAME] --output_file ../results/[MODEL_NAME].json --prompt_type [PROMPT]
+python scripts/openai_model_inference.py --model_name [MODEL_NAME] --output_file [OUTPUT_PATH]/[MODEL_NAME]_prediction.json --prompt_type [PROMPT]
 # [MODEL_NAME] can be: gpt-4-0613, gpt-3.5-turbo-0613, etc.
 # [PROMPT] can be: cot, pot, ltm, complex, contrastive, cot_sc
 ```
@@ -87,26 +86,13 @@ python scripts/openai_model_inference.py --model_name [MODEL_NAME] --output_file
 ```
 python scripts/general_model_inference.py \
 --model_name [MODEL_NAME] \
---output_file ../results/[MODEL_NAME]_prediction.json \
+--output_file [OUTPUT_PATH]/[MODEL_NAME]_prediction.json \
 --model_dir [MODEL_PATH] \  # path to checkpoint files
 --nshots 8 \
 --prompt_type [PROMPT] \
 --specify_your_gpus [GPUT_IDs]
 
 # [PROMPT] can be: cot-nshot, pot-nshot, ltm-nshot, ltm-1shot, complex, contrastive
-```
-
-The predictions of the investigated LLMs on the GSM-Plus and GSM8K datasets are stored in the `results` directory.
-
-
-### Evaluation Metrics 
-
-Run evaluation script `scripts/report_metrics.py` to calculate the accuracy, PDR, ASP metrics, for example: 
-
-```
-    # get_results("prediction_gsmplus_1209_all.json", prompt_type="cot", fine_grained=True, gsm8k_value=93.25, model_name="GPT-4")
-
-python scripts/report_metrics.py --input_file results/llama2_7b.json --prompt_type llama --model_name llama2_7b
 ```
 
 ## Compositional Prompting
@@ -126,11 +112,11 @@ python scripts/compositional_prompt.py --input_file comp_test.json --output_file
 ## ️Citation
 If you find **GSM-Plus** useful, please consider giving star and citing our paper:
 ```
-@misc{ma2024agentboard,
+@misc{li2024gsmplus,
       title={GSM-Plus: A Comprehensive Benchmark for Evaluating the Robustness of LLMs as Mathematical Problem Solvers}, 
       author={Qintong Li and Leyang Cui and Xueliang Zhao and Lingpeng Kong and Wei Bi},
       year={2024},
-      eprint={},
+      eprint={2402.19255},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
