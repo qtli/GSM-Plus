@@ -31,6 +31,10 @@ Based on the 1,319 test questions from GSM8K, we create eight variations for eac
 ## What's New
 - **[2024.02.25]** 📣 Dataset is released.
 
+## TODO
+
+  - [ ] Release a compact test set for quick evaluation
+
 ## Dataset Example
 
 Examples of eight adversarial questions based on a seed question:
