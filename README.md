@@ -3,12 +3,12 @@
 ![Mathematical Reasoning](https://img.shields.io/badge/Task-Mathematical_Reasoning-red) 
 ![LLMs](https://img.shields.io/badge/Model-LLMs-green)
 
-Dataset and Code for the Paper "[A Comprehensive Benchmark for Evaluating the Robustness of LLMs as Mathematical Problem Solvers](https://arxiv.org/abs/)".
+Dataset and Code for the Paper "[A Comprehensive Benchmark for Evaluating the Robustness of LLMs as Mathematical Problem Solvers](https://arxiv.org/abs/2402.19255)".
 
 <div align="center">
   🌐 <a href="https://qtli.github.io/GSM-Plus/">Project Page</a> |
   📚 <a href="https://huggingface.co/datasets/qintongli/GSM-Plus">Data</a> |
-  📃 <a href="https://arxiv.org/abs/2401.13178">Paper</a>
+  📃 <a href="https://arxiv.org/abs/2402.19255">Paper</a>
 </div>
 
 
