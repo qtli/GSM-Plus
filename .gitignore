@@ -160,6 +160,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
+.DS_Store
 
 dataset/gsmplus_test_raw.json
 dataset/extract_ans.py

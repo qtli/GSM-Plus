@@ -29,11 +29,13 @@ we identify 5 perspectives to guide the development of GSM-Plus:
 Based on the 1,319 test questions from GSM8K, we create eight variations for each question, the yielding GSM-Plus comprises **10,552** question variations.
 
 ## What's New
-- **[2024.02.25]** 📣 Dataset is released.
+- **[2024.07.07]** 🌟 An updated version of GSM-Plus, along with a testmini set are accessible at [Huggingface Datasets](https://huggingface.co/datasets/qintongli/GSM-Plus). This updated version, labeled v1, includes fixes for unrealistic numbers and ambiguous descriptions that were present in the initial version of GSM-Plus (v0).
+- **[2024.05.16]** 🎉 Our GSM-Plus paper has been accepted by ACL 2024! 🍻 Cheers!
+- **[2024.02.25]** 📣 Dataset [GSM-Plus v0](https://huggingface.co/datasets/qintongli/GSM-Plus-v0) is released.
 
 ## TODO
 
-  - [ ] Release a compact test set for quick evaluation
+  - [x] Release a compact test set for quick evaluation
 
 ## Dataset Example
 
@@ -47,7 +49,18 @@ Examples of eight adversarial questions based on a seed question:
 
 ### Data Downloading
 
-You can download GSM-Plus test set by the following command (make sure that you have installed [Huggingface Datasets](https://huggingface.co/docs/datasets/quickstart)):
+You can download GSM-Plus **test** set and a smaller subset **testmini** by the following command (make sure that you have installed [Huggingface Datasets](https://huggingface.co/docs/datasets/quickstart)):
+
+We highly recommend downloading the latest version of GSM-Plus, which was released on July 7th and can be found on [Huggingface Datasets](https://huggingface.co/datasets/qintongli/GSM-Plus). 
+This version, GSM-Plus v1, addresses some issues that were present in the previous version, GSM-Plus v0, which was released in February. 
+Specifically, it resolves the problem of unrealistic numbers (e.g., ages over 100) and question contexts that do not strictly adhere to specific perturbations.
+
+We have prepared the entire test split of GSM-Plus, as well as a smaller randomly-sampled subset called testmini. 
+To ensure consistency, we have re-run the main experiments and verified that the LLMs exhibit similar performance on both versions of the GSM-Plus dataset, including its testmini subset.
+
+- test: 10,552 examples for standard evaluation. Each question of GSM8K's test set is associated with eight variations.
+- testmini: 2,400 examples used for model development, fast evaluation, or for those with limited computing resources.
+
 
 ```python
 from datasets import load_dataset
@@ -55,6 +68,7 @@ from datasets import load_dataset
 dataset = load_dataset("qintongli/GSM-Plus")
 # print the first example
 print(dataset["test"][0])
+print(dataset["testmini"][0])
 ```
 
 The dataset is provided in `.jsonl` format and contains the following attributes:
@@ -74,8 +88,8 @@ The dataset is provided in `.jsonl` format and contains the following attributes
 ## Evaluations on GSM-Plus
 
 ### Usage Examples
-
-We offer a few examples for evaluating LLMs on GSM-Plus, as follows:
+The evaluation of GSM-Plus is equivalent to that of the GSM8K dataset. 
+Here, we offer a few examples for evaluating LLMs on GSM-Plus, as follows:
 
 - GPT-4, GPT-Turbo-3.5
 
