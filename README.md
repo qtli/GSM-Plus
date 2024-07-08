@@ -56,6 +56,7 @@ This version, GSM-Plus v1, addresses some issues that were present in the previo
 Specifically, it resolves the problem of unrealistic numbers (e.g., ages over 100) and question contexts that do not strictly adhere to specific perturbations.
 
 We have prepared the entire test split of GSM-Plus, as well as a smaller randomly-sampled subset called testmini. 
+To create the testmini subset, we randomly sample 200 questions from the GSM8K test set and include the corresponding 2,400 perturbation variations for these selected questions.
 To ensure consistency, we have re-run the main experiments and verified that the LLMs exhibit similar performance on both versions of the GSM-Plus dataset, including its testmini subset.
 
 - **test**: 10,552 examples for standard evaluation. Each question of GSM8K's test set is associated with eight variations.
