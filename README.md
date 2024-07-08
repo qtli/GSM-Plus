@@ -58,8 +58,8 @@ Specifically, it resolves the problem of unrealistic numbers (e.g., ages over 10
 We have prepared the entire test split of GSM-Plus, as well as a smaller randomly-sampled subset called testmini. 
 To ensure consistency, we have re-run the main experiments and verified that the LLMs exhibit similar performance on both versions of the GSM-Plus dataset, including its testmini subset.
 
-- test: 10,552 examples for standard evaluation. Each question of GSM8K's test set is associated with eight variations.
-- testmini: 2,400 examples used for model development, fast evaluation, or for those with limited computing resources.
+- **test**: 10,552 examples for standard evaluation. Each question of GSM8K's test set is associated with eight variations.
+- **testmini**: 2,400 examples used for model development, fast evaluation, or for those with limited computing resources.
 
 
 ```python
